@@ -133,7 +133,7 @@
 				}
 				let star = left.querySelector('path')
 				console.log(star.classList)
-				star.addEventListener('click', e => markHandler(e, item), true) // caputure
+				star.addEventListener('click', e => markHandler(e, item))
 
 				let right = document.createElement('div')
 				right.classList.add("right")
@@ -146,6 +146,8 @@
 				if (marked) {
 					footContainer.classList.remove('disapear')
 					let clone = wrapper.cloneNode(true)
+					let cloneStar = clone.querySelector('path')
+					cloneStar.addEventListener('click', e => markHandler(e, item))
 					footer.appendChild(clone)
 					console.log(footer)
 				}
@@ -179,7 +181,7 @@
 			}
 
 		}
-		const clickHandler = e => {
+		const clickHandler = () => {
 
 			fetchedItems = []
 			const { value } = searchInput
@@ -194,8 +196,13 @@
 					render()
 				});
 		}
+
+		const keydownHandler = e => {
+			if (e.key === 'Enter') clickHandler()
+		}
 		searchInput.addEventListener('input', onchangeHandler)
 		searchIcon.addEventListener('click', clickHandler)
+		document.addEventListener('keydown', keydownHandler)
 	</script>
 </body>
 
