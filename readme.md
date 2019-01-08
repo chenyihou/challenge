@@ -1,4 +1,4 @@
-```
+
 # Web Engineer Challenge - Summer 2019
 
 Build a web app to search for waste items using the Toronto Waste Wizard database, and save frequently used ones.
@@ -29,4 +29,3 @@ In your application, please include:
 
 1. A link to your codebase, for review.
 2. A link to a hosted version, for testing.
-```
