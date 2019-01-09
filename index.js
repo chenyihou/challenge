@@ -47,7 +47,6 @@ app.get('/api', (req, res) => {
             res.send({ok:false})
         }
     }
-    
 })
 
 app.listen(8000)
