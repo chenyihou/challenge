@@ -1,7 +1,7 @@
 
 # Web Engineer Challenge - Summer 2019
 
-The hosted webpage is [here](http://99.79.9.127:8000/)
+**The hosted webpage is [here](http://99.79.9.127:8000/)**
 
 Build a web app to search for waste items using the Toronto Waste Wizard database, and save frequently used ones.
 
